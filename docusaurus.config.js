@@ -10,7 +10,7 @@ const config = {
   tagline: 'Node.JS Backend framework',
   url: 'https://nodearch.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  // onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nodearch', // Usually your GitHub org/user name.
@@ -57,6 +57,11 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://github.com/ahmedali7o1',
+            label: 'Developer',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/nodearch/nodearch',
             label: 'GitHub',
             position: 'right',
@@ -92,7 +97,7 @@ const config = {
               },
               {
                 label: 'Get Started',
-                to: '/docs/installation',
+                to: '/docs',
               }
             ],
           },
@@ -131,7 +136,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} NodeArch, Inc. Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} NodeArch. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
