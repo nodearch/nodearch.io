@@ -11,13 +11,29 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <img className="header-logo header-shadow" src="img/logo.png" width="200" height="auto" />
+        <h1 className="hero__title header-shadow">{siteConfig.title}
+        <br />
+        <a href="https://www.npmjs.com/package/@nodearch/core" rel="noopener noreferrer">
+          <img
+            alt="npm core"
+            src="https://img.shields.io/npm/v/@nodearch/core?label=Core&style=flat-square"
+          ></img>
+          {'  '}
+        </a>
+        <a href="https://www.npmjs.com/package/@nodearch/cli" rel="noopener noreferrer">
+          <img
+            alt="npm cli"
+            src="https://img.shields.io/npm/v/@nodearch/cli?label=CLI&style=flat-square"
+          ></img>
+        </a>
+        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/">
-            Docusaurus Tutorial - 5min ⏱️
+            Get Started
           </Link>
         </div>
       </div>

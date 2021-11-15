@@ -4,32 +4,61 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Extensibility',
+    // Svg: require('../../static/img/logo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        With the powerful extension system, you can customize the behavior of your app, 
+        either by using an existing extension from npm or writing it yourself
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Modularity & Design',
+    // Svg: require('../../static/img/logo.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Deliver best quality, scalable, maintainable, production grade code, 
+        using well known design patterns, powerful dependency injection, and Typescript.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Productivity',
+    // Svg: require('../../static/img/logo.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Focus on what matters, with features such as modules auto detection, 
+        you will not be distracted with unnecessary imports and code wiring.
+      </>
+    ),
+  },
+  {
+    title: 'Typescript',
+    // Svg: require('../../static/img/logo.svg').default,
+    description: (
+      <>
+        Full support for Typescript including a rich library of decorators to aid you in the development journey.
+      </>
+    ),
+  },
+  {
+    title: 'Inversify',
+    // Svg: require('../../static/img/logo.svg').default,
+    description: (
+      <>
+        NodeArch uses Inversify, A powerful and lightweight inversion of control container, 
+        to handle all the heavy work for dependency injection.
+      </>
+    ),
+  },
+  {
+    title: 'Use cases',
+    // Svg: require('../../static/img/logo.svg').default,
+    description: (
+      <>
+        The NodeArch core module is designed to support you no matter your use case, 
+        you can look for an existing extension e.g. @nodearch/express or create and publish your own.
       </>
     ),
   },
@@ -37,11 +66,11 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4')} >
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        {/* <Svg className={styles.featureSvg} alt={title} /> */}
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--lg padding-vert--lg">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

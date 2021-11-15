@@ -95,10 +95,10 @@ const config = {
                 label: 'Introduction',
                 to: '/docs',
               },
-              {
-                label: 'Get Started',
-                to: '/docs',
-              }
+              // {
+              //   label: 'Get Started',
+              //   to: '/docs',
+              // }
             ],
           },
           {
