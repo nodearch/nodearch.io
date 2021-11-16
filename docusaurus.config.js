@@ -57,6 +57,18 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
+          },
+          // {
+          //   type: 'docsVersion',
+          //   position: 'left',
+          //   to: '/path',
+          //   label: 'label',
+          // },
+          {
             href: 'https://github.com/ahmedali7o1',
             label: 'Developer',
             position: 'right',
