@@ -35,8 +35,8 @@ const sidebars = {
       collapsed: false,
       items: [
         'installation',
-        'configuration',
-        'first-app'
+        'hello-world',
+        'configuration'
       ]
     },
     {
