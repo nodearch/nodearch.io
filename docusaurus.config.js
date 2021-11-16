@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nodearch', // Usually your GitHub org/user name.
-  projectName: 'nodearch.github.io', // Usually your repo name.
+  projectName: 'nodearch.io', // Usually your repo name.
 
   presets: [
     [
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/nodearch/nodearch.github.io/edit/source/website/',
+          editUrl: 'https://github.com/nodearch/nodearch.io/edit/main/',
         },
         // blog: {
         //   showReadingTime: true,
