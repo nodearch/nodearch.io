@@ -10,15 +10,23 @@ const config = {
   tagline: 'Node.JS Backend framework',
   url: 'https://nodearch.io',
   baseUrl: '/',
-  // onBrokenLinks: 'throw',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nodearch', // Usually your GitHub org/user name.
   projectName: 'nodearch.io', // Usually your repo name.
 
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -42,6 +50,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: 'img/logo2.svg',
       navbar: {
         title: 'NodeArch',
         logo: {

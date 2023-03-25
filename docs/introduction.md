@@ -5,7 +5,7 @@ slug: /
 
 # Introduction
 
-<img align="right" src="https://github.com/AhmedAli7O1/nodearch/raw/master/assets/isolated-layout.svg" height="200" width="300" alt="NodeArch Logo" />
+<img align="right" src="https://github.com/AhmedAli7O1/nodearch/raw/master/assets/isolated-layout.svg" style={{height: 200, width: 300}} alt="NodeArch Logo" />
 
 ## Welcome to NodeArch
 

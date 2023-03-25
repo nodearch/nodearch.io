@@ -1,11 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import styles from './styles.module.css';
 
-const FeatureList = [
+type FeatureItem = {
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: JSX.Element;
+};
+
+const FeatureList: FeatureItem[] = [
   {
     title: 'Extensibility',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         With the powerful extension system, you can customize the behavior of your app, 
@@ -15,7 +21,7 @@ const FeatureList = [
   },
   {
     title: 'Modularity & Design',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         Deliver best quality, scalable, maintainable, production grade code, 
@@ -25,7 +31,7 @@ const FeatureList = [
   },
   {
     title: 'Productivity',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         Focus on what matters, with features such as modules auto detection, 
@@ -35,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Typescript',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         Full support for Typescript including a rich library of decorators to aid you in the development journey.
@@ -44,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Inversify',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         NodeArch uses Inversify, A powerful and lightweight inversion of control container, 
@@ -54,7 +60,7 @@ const FeatureList = [
   },
   {
     title: 'Use cases',
-    // Svg: require('../../static/img/logo.svg').default,
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         The NodeArch core module is designed to support you no matter your use case, 
@@ -64,13 +70,14 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')} >
+    <div className={clsx('col col--4')}>
       <div className="text--center">
-        {/* <Svg className={styles.featureSvg} alt={title} /> */}
+        <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--lg padding-vert--lg">
+      <div className="text--center padding-horiz--md">
+      {/* <div className="text--center padding-horiz--lg padding-vert--lg"> */}
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
@@ -78,7 +85,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
