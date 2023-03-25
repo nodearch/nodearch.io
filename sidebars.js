@@ -71,6 +71,9 @@ const sidebars = {
         {
           type: 'category',
           label: 'Official Extensions',
+          link: {
+            type: 'generated-index'
+          },
           collapsed: true,
           items: [
             {
@@ -82,6 +85,9 @@ const sidebars = {
         {
           type: 'category',
           label: 'Community Extensions',
+          link: {
+            type: 'generated-index'
+          },
           collapsed: true,
           items: [
             {
