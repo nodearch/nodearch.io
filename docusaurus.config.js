@@ -79,6 +79,11 @@ const config = {
           //   label: 'label',
           // },
           {
+            href: 'https://github.com/nodearch/nodearch/blob/master/LICENSE',
+            label: 'License',
+            position: 'right'
+          },
+          {
             href: 'https://github.com/ahmedali7o1',
             label: 'Developer',
             position: 'right',

@@ -18,7 +18,13 @@ slug: /
 [![Build Status](https://img.shields.io/github/workflow/status/AhmedAli7o1/nodearch/Deploy/master?label=Build)](https://img.shields.io/github/workflow/status/nodearch/nodearch/Deploy/master)
 [![Star on GitHub](https://img.shields.io/github/stars/AhmedAli7o1/nodearch?style=social)](https://github.com/AhmedAli7O1/nodearch/stargazers)
 
-NodeArch is a Node.js backend framework targeting to solve the design and architectural problems when creating Node.js APPs for the backend. Using Typescript and dependency injection, we bring the concepts we used to in languages like Java, C# etc. While still getting the best out of Javascript flexibility and Node.js non-blocking I/O model. There is also a big focus on wiring everything together, so our intention is not to reinvent/rewrite the tools/frameworks we already know and use. Instead, our target is to wire everything together and leverage the open-source community behind Node.js and Javascript. You can think of NodeArch as the glue that links all your tools and libraries together and helps create a readable, maintainable and scalable application architecture.
+NodeArch is a powerful Node.js backend framework designed to help developers solve common design and architectural challenges when building backend applications. Built with TypeScript and a focus on dependency injection, NodeArch brings the concepts and patterns commonly found in Java and C# to the world of Node.js development. This allows developers to create scalable and maintainable applications using familiar patterns, while still leveraging the flexibility and non-blocking I/O model of Node.js.
+
+At its core, NodeArch is designed to be the glue that links together the many tools and libraries that make up the Node.js and JavaScript ecosystems. Rather than reinventing the wheel or creating entirely new tools, NodeArch is designed to help developers wire everything together in a way that is intuitive, readable, and easy to maintain.
+
+This documentation is intended to provide a comprehensive guide to NodeArch, from installation and setup to advanced topics like middleware and routing. It is designed for developers who are already familiar with Node.js and backend development, but who are new to NodeArch or looking to learn more about its features and advantages.
+
+In the following sections, you'll find detailed information on how to use NodeArch to build powerful, scalable, and maintainable applications. We'll start with the basics, like installing the NodeArch command-line interface and generating a new project. From there, we'll dive into topics like dependency injection, middleware, routing, and more. Whether you're just getting started with NodeArch or looking to take your skills to the next level, this documentation is the perfect resource to help you achieve your goals.
 
 ## Getting started
 
