@@ -9,6 +9,8 @@
   - [@Test](#test)
   - [@BeforeEach](#beforeeach)
   - [@Case](#case)
+    - [Usage](#usage)
+    - [Arguments](#arguments)
   - [@Mock](#mock)
   - [@Override](#override)
 - [Writing Test Cases](#writing-test-cases)
@@ -83,7 +85,7 @@ setup() {
 
 ### @Case
 
-The @Case decorator marks a method as a test case. You can also pass parameters to customize the test case.
+The `@Case` decorator marks a method as a test case. It can be used in several ways to customize the test case, including setting a title and providing parameters.
 
 ```javascript
 @Case()
@@ -91,6 +93,62 @@ async myTestCase() {
   // Test case code
 }
 ```
+
+#### Usage
+
+The `@Case` decorator can be used in the following ways:
+
+1. **Without Parameters**: Marks a method as a test case with the method name as the title.
+
+    ```javascript
+    @Case()
+    async myTestCase() {
+      // Test case code
+    }
+    ```
+
+2. **With Title**: Marks a method as a test case with a custom title.
+
+    ```javascript
+    @Case('Custom Test Case Title')
+    async myTestCase() {
+      // Test case code
+    }
+    ```
+
+3. **With Options**: Marks a method as a test case with options including title, active state, and parameters.
+
+    ```javascript
+    @Case({ title: 'Custom Test Case Title', active: true, params: { id: 1 } })
+    async myTestCase() {
+      // Test case code
+    }
+    ```
+
+4. **With Title and Options**: Marks a method as a test case with a custom title and additional options.
+
+    ```javascript
+    @Case('Custom Test Case Title', { active: true, params: { id: 1 } })
+    async myTestCase() {
+      // Test case code
+    }
+    ```
+
+#### Arguments
+
+* title: string (optional) - The title of the test case.
+* options: ITestCaseOptions (optional) - Additional options for the test case.
+    ```typescript
+    export interface ITestCaseOptions {
+      title?: string;
+      active?: boolean;
+      params?: object;
+    }
+    ```
+    * title: string (optional) - The title of the test case.
+    * active: boolean (optional) - Indicates whether the test case is active. Defaults to true.
+    * params: object (optional) - Parameters to pass to the test case.
+
 
 ### @Mock
 
