@@ -9,10 +9,13 @@
   - [@Test](#test)
   - [@BeforeEach](#beforeeach)
   - [@Case](#case)
+  - [@Mock](#mock)
+  - [@Override](#override)
 - [Writing Test Cases](#writing-test-cases)
   - [Example: User Service Tests](#example-user-service-tests)
 - [Mocking Dependencies](#mocking-dependencies)
   - [Example: Mocking User Repository](#example-mocking-user-repository)
+  - [user-repo.mock.js](#user-repo-mock)
 
 ## Introduction
 
@@ -202,7 +205,7 @@ export class UserTest {
 }
 ```
 
-#### user-repo.mock.js
+### user-repo-mock
 
 Below is the implementation of the mock user repository:
 
