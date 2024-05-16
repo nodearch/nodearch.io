@@ -89,9 +89,28 @@ async myTestCase() {
 }
 ```
 
+### @Mock
+
+The @Mock decorator is used to mock a class or a service. This is useful for isolating the unit under test.
+
+```javascript
+@Mock(SampleComponent)
+export class SampleMock { ... }
+```
+
+### @Override
+
+The @Override decorator is used to replace the real implementation of a dependency with a mock implementation in the test class.
+
+```javascript
+@Override(SampleMock)
+export class SampleTest { ... }
+```
+
 ## Writing Test Cases
 
 ### Example: User Service Tests
+
 Below is an example of writing test cases for a UserService class. This example includes tests for fetching users, adding a user, and getting a user by ID.
 
 ```javascript
@@ -179,6 +198,31 @@ export class UserTest {
     const users = await this.userService.getUsers();
     expect(users).length(1);
     expect(users[0].name).to.be.equal('Mocked User'); // The value is from UserRepoMock
+  }
+}
+```
+
+#### user-repo.mock.js
+
+Below is the implementation of the mock user repository:
+
+```javascript
+import { Mock } from '@nodearch/mocha';
+import { UserRepository } from './user.repository.js';
+
+@Mock(UserRepository)
+export class UserRepoMock {
+  async getUsers() {
+    return [
+      {
+        id: 1000,
+        name: 'Mocked User',
+        email: 'mocked.user@email.com',
+        age: 1,
+        role: 'admin',
+        language: 'en'
+      },
+    ];
   }
 }
 ```
