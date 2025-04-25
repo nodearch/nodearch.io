@@ -29,8 +29,8 @@ const sidebars: SidebarsConfig = {
       label: 'Getting Started',
       items: [
         'getting-started/installation',
+        'getting-started/project-structure',
         'getting-started/hello-world',
-        // 'getting-started/project-structure',
         // 'getting-started/quick-tour',
       ],
     },
