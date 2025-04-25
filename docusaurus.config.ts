@@ -81,30 +81,30 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'extensions',
-          position: 'left',
-          label: 'Extensions',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'api',
-          position: 'left',
-          label: 'API',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'architecture',
-          position: 'left',
-          label: 'Architecture',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'developer',
-          position: 'left',
-          label: 'Developer',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'extensions',
+        //   position: 'left',
+        //   label: 'Extensions',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'api',
+        //   position: 'left',
+        //   label: 'API',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'architecture',
+        //   position: 'left',
+        //   label: 'Architecture',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'developer',
+        //   position: 'left',
+        //   label: 'Developer',
+        // },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'roadmapSidebar',
@@ -132,8 +132,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting Started',
+              to: '/docs/getting-started/hello-world',
             },
           ],
         },
@@ -144,10 +144,10 @@ const config: Config = {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/nodearch',
             },
-            {
-              label: 'Slack',
-              href: 'https://nodearch.slack.com',
-            }
+            // {
+            //   label: 'Slack',
+            //   href: 'https://nodearch.slack.com',
+            // }
           ],
         },
         {

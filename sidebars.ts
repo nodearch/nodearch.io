@@ -145,29 +145,26 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
-  roadmap: [
-    'roadmap',
-  ],
-  changelog: [
-    'changelog',
-  ],
-  api: [
-    'api-reference/cli',
-    'api-reference/configuration',
-    'api-reference/core-types',
-    'api-reference/decorators',
-    'api-reference/lifecycle-hooks',
-  ],
-  architecture: [
-    'architecture/architecture-overview',
-  ],
-  extensions: [
-    'extensions/express',
-    'extensions/socket-io',
-  ],
-  developer: [
-    'developer/vscode-extension',
-  ]
+  // changelog: [
+  //   'changelog',
+  // ],
+  // api: [
+  //   'api-reference/cli',
+  //   'api-reference/configuration',
+  //   'api-reference/core-types',
+  //   'api-reference/decorators',
+  //   'api-reference/lifecycle-hooks',
+  // ],
+  // architecture: [
+  //   'architecture/architecture-overview',
+  // ],
+  // extensions: [
+  //   'extensions/express',
+  //   'extensions/socket-io',
+  // ],
+  // developer: [
+  //   'developer/vscode-extension',
+  // ]
 };
 
 export default sidebars;
