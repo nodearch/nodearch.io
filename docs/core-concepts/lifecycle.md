@@ -1,27 +1,46 @@
 # Lifecycle
 
+NodeArch applications follow a well-defined lifecycle that ensures your app and its extensions are loaded, initialized, and started in a consistent and extensible way. This document explains what happens when you run `nodearch start` and how the framework manages your app's lifecycle.
 
-Draft the doc talking about the framework lifecycle. 
+## 1. CLI Bootstrapping
 
-When you run nodearch start: 
+When you run `nodearch start`:
 
-- Cli look for app in the current directory by scanning for file called nodearch
-- When found it is loaded, and the main entry point is called which is the main.ts file
-- The main.ts file is expected to export a class that extends the App class from @nodearch/core
-- Cli creates an instace from the loaded app, and then calls two main built-in functions on App
-- calls init() which:
-  - Loads and init core components (Logger, AppContext, ConfigManager)
-  - Loads extensions if any, keeping in mind that extensions are just nodearch apps like yours, so it will be doing the same logic to load them as what we're explaining now.
-  - Registring the extentions in the main app.
-  - Loading the main app (your app):
-    - Using components.url specified in your app, scans the directory recursivel and load all ts/js files based on the mode.
-    - Load these files using nodejs import. 
-    - Filter the loaded files to keep only components which are classes that uses a nodearch builtin or custome component decorator, e.g., Controller, Service, etc.
-  - Registring hooks from both the main app and any extension that exports a hook e.g. has `@Hook({ export: true })
-- calls start() which:
-  - Calls and await on onStart() for all registered hooks
-- and finally when the app exit it will call stop() which calls onStop() on all registered hooks.
+- The CLI scans the current directory for a file named `nodearch` to locate your app.
+- Once found, it loads the app and looks for the main entry point, typically `main.ts`.
+- The `main.ts` file should export a class that extends the `App` class from `@nodearch/core`.
+- The CLI creates an instance of your app and invokes two main built-in methods: `init()` and `start()`.
 
+## 2. Initialization Phase (`init()`)
 
+The `init()` method is responsible for setting up the core of your application:
 
-// Add the scope part
+- **Core Components**: Loads and initializes essential components such as Logger, AppContext, and ConfigManager.
+- **Extensions**: Loads any extensions. Extensions are themselves NodeArch apps, so the same loading logic applies recursively.
+- **Registering Extensions**: Integrates loaded extensions into the main app.
+- **Component Loading**:
+  - Uses the `components.url` specified in your app to scan directories recursively for `.ts`/`.js` files (depending on the mode).
+  - Loads these files using Node.js dynamic import.
+  - Filters loaded files to keep only components (classes decorated with NodeArch built-in or custom decorators, e.g., `@Controller`, `@Service`).
+- **Hook Registration**: Registers hooks from both the main app and any extension that exports a hook (e.g., decorated with `@Hook({ export: true })`).
+- **Dependency Injection & Scopes**:
+  - When a component is injected into another, the framework resolves dependencies based on the defined component scope, either globally (via `components.scope`) or per component (via the decorator, e.g., `@Service({ scope: ComponentScope.SINGLETON })`).
+  - **Scopes:**
+    - `ComponentScope.SINGLETON`: The component is created once and shared across the app (default).
+    - `ComponentScope.TRANSIENT`: A new instance is created each time the component is injected. Useful for stateless components.
+    - `ComponentScope.REQUEST`: A new instance is created for each request (not limited to HTTP requests; could be a message, scheduled task, etc.).
+
+## 3. Startup Phase (`start()`)
+
+- The `start()` method is called after initialization.
+- It calls and awaits `onStart()` for all registered hooks.
+- This is where the main logic of your app and extensions runs. For example, a hook from `@nodearch/express` may retrieve all controllers, parse routes and middlewares, register them in an Express app, and start the HTTP server.
+
+## 4. Shutdown Phase (`stop()`)
+
+- When the app is about to exit, the `stop()` method is called.
+- This triggers `onStop()` on all registered hooks, allowing for graceful shutdown and cleanup.
+
+---
+
+By following this lifecycle, NodeArch ensures that your app and its extensions are loaded, initialized, started, and stopped in a predictable and extensible manner.

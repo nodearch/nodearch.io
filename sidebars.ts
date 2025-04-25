@@ -39,7 +39,15 @@ const sidebars: SidebarsConfig = {
       label: 'Core Concepts',
       items: [
         'core-concepts/lifecycle',
-        'core-concepts/hooks',
+        'core-concepts/app',
+        'core-concepts/extensions',
+        {
+          type: 'category',
+          label: 'Components',
+          items: [
+            'core-concepts/components/hooks',
+          ],
+        },
         // 'core-concepts/dependency-injection',
         // 'core-concepts/modules',
         // 'core-concepts/hooks-lifecycle',
