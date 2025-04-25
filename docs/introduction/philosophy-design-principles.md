@@ -1,4 +1,4 @@
-# 🧠 Design Principles
+# Design Principles
 
 NodeArch was built with a clear mission: to make backend development in Node.js **structured, maintainable, and scalable** — without sacrificing the flexibility developers love.
 
@@ -6,7 +6,7 @@ It draws inspiration from enterprise frameworks like **Spring (Java)** and **.NE
 
 ---
 
-## 🔁 Convention Over Configuration
+## Convention Over Configuration
 
 NodeArch encourages consistency and simplicity through **conventions**.
 
@@ -16,7 +16,7 @@ NodeArch encourages consistency and simplicity through **conventions**.
 
 ---
 
-## 🔗 Dependency Injection as a Foundation
+## Dependency Injection as a Foundation
 
 Everything in NodeArch is designed around **Dependency Injection (DI)** — enabling loosely coupled, testable, and modular components.
 
@@ -26,7 +26,7 @@ Everything in NodeArch is designed around **Dependency Injection (DI)** — enab
 
 ---
 
-## 🧩 Modular by Design
+## Modular by Design
 
 NodeArch is built on the concept of a **Component**, which is a class that could be a Controller, Service, Repository, Config, Hook, or a generic Component.
 
@@ -39,7 +39,7 @@ NodeArch is built on the concept of a **Component**, which is a class that could
 
 ---
 
-## 🧘 Balanced Opinionation
+## Balanced Opinionation
 
 NodeArch provides **just enough structure** to guide you — without locking you in.
 
@@ -49,7 +49,7 @@ NodeArch provides **just enough structure** to guide you — without locking you
 
 ---
 
-## 🧠 TypeScript First
+## TypeScript First
 
 NodeArch is built entirely with **TypeScript**, offering a modern and type-safe developer experience.
 
@@ -59,7 +59,7 @@ NodeArch is built entirely with **TypeScript**, offering a modern and type-safe 
 
 ---
 
-## 🧪 Testability at Every Layer
+## Testability at Every Layer
 
 Testability is not an afterthought — it’s **baked into the design**.
 
@@ -69,7 +69,7 @@ Testability is not an afterthought — it’s **baked into the design**.
 
 ---
 
-## 🔌 Integration, Not Reinvention
+## Integration, Not Reinvention
 
 NodeArch aims to **integrate seamlessly with the existing ecosystem**.
 
@@ -79,7 +79,7 @@ NodeArch aims to **integrate seamlessly with the existing ecosystem**.
 
 ---
 
-## 🪝 Clear Lifecycle Management
+## Clear Lifecycle Management
 
 NodeArch includes a **lifecycle hook system** that allows developers to plug into application startup and shutdown routines.
 
@@ -88,7 +88,7 @@ NodeArch includes a **lifecycle hook system** that allows developers to plug int
 
 ---
 
-## 📦 Lightweight and Production-Ready
+## Lightweight and Production-Ready
 
 NodeArch apps compile into **lean, production-ready builds**.
 
@@ -98,6 +98,6 @@ NodeArch apps compile into **lean, production-ready builds**.
 
 ---
 
-## 🎯 Philosophy in One Sentence
+## Philosophy in One Sentence
 
 > **“Empower developers to build clean, scalable, and maintainable backend applications — without reinventing the wheel.”**

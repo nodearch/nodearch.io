@@ -1,4 +1,4 @@
-# 👋 Hello World
+# Hello World
 
 Let’s build your first NodeArch application! In just a few steps, you’ll scaffold a new project, create a controller, and run a simple Express-powered server that responds to HTTP requests.
 
@@ -6,7 +6,7 @@ This guide assumes you’ve already [installed NodeArch](./installation.md) and 
 
 ---
 
-## 🧱 Step 1: Create a New Project
+## Step 1: Create a New Project
 
 Run the following command in your terminal:
 
@@ -18,7 +18,7 @@ Select the `express` template when prompted. This will scaffold a basic project 
 
 ---
 
-## 📁 Step 2: Explore the Project
+## Step 2: Explore the Project
 
 Your new project will have a structure like this:
 
@@ -38,7 +38,7 @@ hello-world/
 
 ---
 
-## ✍️ Step 3: Create a Controller
+## Step 3: Create a Controller
 
 Create a file at `src/components/hello.controller.ts` with the following content:
 
@@ -61,7 +61,7 @@ This controller exposes a `GET /hello` route that returns a friendly JSON respon
 
 ---
 
-## 🚀 Step 4: Start the App
+## Step 4: Start the App
 
 To run the app in watch mode (auto-reload on changes):
 
@@ -91,7 +91,7 @@ Response:
 
 ---
 
-## ✅ Congratulations!
+## Congratulations!
 
 You've just created and run your first NodeArch app! 🎉
 

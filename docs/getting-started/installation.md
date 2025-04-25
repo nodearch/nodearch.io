@@ -1,10 +1,10 @@
-# 📦 Installation
+# Installation
 
 Getting started with NodeArch is simple. With just a few steps, you’ll have everything you need to build structured, scalable, and maintainable Node.js applications.
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before installing NodeArch, make sure you have the following tools installed:
 
@@ -21,7 +21,7 @@ npm -v
 
 ---
 
-## 🚀 Installing the CLI
+## Installing the CLI
 
 NodeArch provides a powerful CLI that helps you create, build, and run applications.
 
@@ -41,7 +41,7 @@ This will display all available commands and options.
 
 ---
 
-## 🧪 Quick Check
+## Quick Check
 
 To ensure the CLI is correctly installed, try running:
 
@@ -53,7 +53,7 @@ You should see the currently installed version of the CLI.
 
 ---
 
-## 🧰 Creating a New Project
+## Creating a New Project
 
 To generate a new NodeArch app, run:
 
@@ -65,7 +65,7 @@ You’ll be prompted to select a template (e.g. `express`) and the project will 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 After creating your app, you’ll see a structure like this:
 
@@ -86,7 +86,7 @@ my-app/
 
 ---
 
-## 🔄 Running Your App
+## Running Your App
 
 To start your app in development mode:
 
@@ -102,7 +102,7 @@ nodearch start
 
 ---
 
-## 🛠 Build for Production
+## Build for Production
 
 When you're ready to build your app for production:
 
@@ -114,7 +114,7 @@ This outputs a compiled version of your app into the `dist/` directory.
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 NodeArch supports **Mocha** for writing and running tests:
 

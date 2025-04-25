@@ -1,4 +1,4 @@
-# 🌟 Key Features
+# Key Features
 
 NodeArch brings a fresh, modular, and scalable approach to backend development in Node.js. It blends the best of TypeScript, Express, and enterprise software principles into a cohesive framework — perfect for building robust applications.
 
@@ -6,7 +6,7 @@ Here are the key features that set NodeArch apart:
 
 ---
 
-## 🧩 Modular Architecture
+## Modular Architecture
 
 Structure your application with clean boundaries and domain separation.
 
@@ -16,7 +16,7 @@ Structure your application with clean boundaries and domain separation.
 
 ---
 
-## 💉 Built-In Dependency Injection
+## Built-In Dependency Injection
 
 NodeArch includes a lightweight, powerful DI container.
 
@@ -26,7 +26,7 @@ NodeArch includes a lightweight, powerful DI container.
 
 ---
 
-## 🧠 Decorator-Based API (Express-Powered)
+## Decorator-Based API (Express-Powered)
 
 NodeArch uses TypeScript decorators to streamline development and eliminate boilerplate. Here’s a real example using Express:
 
@@ -62,7 +62,7 @@ export class UserController {
 
 ---
 
-## ⚙️ Powerful CLI Tooling
+## Powerful CLI Tooling
 
 Speed up your development workflow using the NodeArch CLI.
 
@@ -79,7 +79,7 @@ Speed up your development workflow using the NodeArch CLI.
 
 ---
 
-## 🧪 Testing-Ready with Mocha
+## Testing-Ready with Mocha
 
 NodeArch uses **Mocha** as its testing foundation, and supports:
 
@@ -89,7 +89,7 @@ NodeArch uses **Mocha** as its testing foundation, and supports:
 
 ---
 
-## 🪝 Application Lifecycle Hooks
+## Application Lifecycle Hooks
 
 Need to run code on application start or shutdown? NodeArch provides a clean lifecycle hook system:
 
@@ -98,7 +98,7 @@ Need to run code on application start or shutdown? NodeArch provides a clean lif
 
 ---
 
-## 🔌 Express-Centric Integration
+## Express-Centric Integration
 
 NodeArch doesn’t replace your stack — it enhances it.
 
@@ -108,7 +108,7 @@ NodeArch doesn’t replace your stack — it enhances it.
 
 ---
 
-## 🧰 TypeScript Native + Build-Ready
+## TypeScript Native + Build-Ready
 
 - Built entirely with and for **TypeScript**
 - First-class types and autocompletion everywhere
@@ -116,7 +116,7 @@ NodeArch doesn’t replace your stack — it enhances it.
 
 ---
 
-## 👨‍💻 Developer Experience First
+## Developer Experience First
 
 - Simple, expressive decorators
 - Clean error messages and debug helpers
