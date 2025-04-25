@@ -34,17 +34,19 @@ const sidebars: SidebarsConfig = {
         // 'getting-started/quick-tour',
       ],
     },
-    // {
-    //   type: 'category',
-    //   label: 'Core Concepts',
-    //   items: [
-    //     'core-concepts/dependency-injection',
-    //     'core-concepts/modules',
-    //     'core-concepts/hooks-lifecycle',
-    //     'core-concepts/providers-services',
-    //     'core-concepts/configuration',
-    //   ],
-    // },
+    {
+      type: 'category',
+      label: 'Core Concepts',
+      items: [
+        'core-concepts/lifecycle',
+        'core-concepts/hooks',
+        // 'core-concepts/dependency-injection',
+        // 'core-concepts/modules',
+        // 'core-concepts/hooks-lifecycle',
+        // 'core-concepts/providers-services',
+        // 'core-concepts/configuration',
+      ],
+    },
     // {
     //   type: 'category',
     //   label: 'Guide',
