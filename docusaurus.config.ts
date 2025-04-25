@@ -40,8 +40,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -51,8 +51,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -77,10 +77,46 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'extensions',
+          position: 'left',
+          label: 'Extensions',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'api',
+          position: 'left',
+          label: 'API',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'architecture',
+          position: 'left',
+          label: 'Architecture',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'developer',
+          position: 'left',
+          label: 'Developer',
+        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'roadmapSidebar',
+        //   position: 'left',
+        //   label: 'Roadmap',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'changelogSidebar',
+        //   position: 'left',
+        //   label: 'Changelog',
+        // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/nodearch/nodearch',
