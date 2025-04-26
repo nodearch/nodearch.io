@@ -126,8 +126,8 @@ const config: Config = {
       ],
     },
     algolia: {
-      appId: 'BH4D9OD16A',
-      apiKey: '9dc08abad50261f977efb2dd8a1fcc8b',
+      appId: 'HCZ67KVZRI',
+      apiKey: '5ac595f3332920393fb6a09cfdf14ed2',
       indexName: 'nodearch',
       contextualSearch: true,
     },
