@@ -125,6 +125,12 @@ const config: Config = {
         },
       ],
     },
+    algolia: {
+      appId: 'BH4D9OD16A',
+      apiKey: '9dc08abad50261f977efb2dd8a1fcc8b',
+      indexName: 'nodearch',
+      contextualSearch: true,
+    },
     footer: {
       style: 'dark',
       links: [
