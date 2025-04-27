@@ -130,6 +130,9 @@ const config: Config = {
       apiKey: '5ac595f3332920393fb6a09cfdf14ed2',
       indexName: 'nodearch',
       contextualSearch: true,
+      searchParameters: {},
+      searchPagePath: 'search',
+      insights: true,
     },
     footer: {
       style: 'dark',
